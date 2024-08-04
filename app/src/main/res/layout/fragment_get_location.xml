@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GetLocationFragment">
+
+    <EditText
+        android:id="@+id/etFromLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="23dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/textHint"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_map"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_your_location"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etToLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="23dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/textHint"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_map"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_destination"
+        app:layout_constraintTop_toBottomOf="@id/etFromLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetDirection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/get_location"
+        android:textColor="@color/white"
+        android:background="@drawable/all_btn_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etToLocation"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
